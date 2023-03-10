@@ -1,12 +1,13 @@
-const TaskStatus = () => {
+const TaskStatus = ({ tasksLength, cTasksLength }) => {
   return (
+
     <>
       <div className="--flex-between --pb">
         <p>
-          <b>Total Tasks</b> 0
+          <b>Total Tasks</b> {tasksLength}
         </p>
         <p>
-          <b>Completed Tasks</b> 0
+          <b>Completed Tasks</b> {cTasksLength}
         </p>
       </div>
       <hr />
